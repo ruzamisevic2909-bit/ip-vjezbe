@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Moja prva stranica – Header</title>
+    <link rel="stylesheet"type="text/css" href="style.css">
+ <style>
+
+.raspored {width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;}
+
+ main h1 {text-align: center;
+
+color: blue;
+
+margin-top: 10px;
+
+margin-bottom: 10px;
+
+font-size: 28px;}
+
+.raspored caption {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.raspored th,
+.raspored td {
+    border: 1px solid #cccccc;
+    padding: 6px;
+    text-align: center;
+    font-size: 14px;
+}
+.raspored th {
+    background-color: #fff7cc;
+}
+
+main h2  {margin-top: 15px;
+
+margin-bottom: 8px;
+
+color: #333333;
+
+font-size: 20px;
+}
+main p    {line-height: 1.5;
+
+margin-bottom: 10px;
+
+font-size: 16px;
+}
+.uvod  {font-style: italic;
+
+font-weight: bold;
+
+margin-bottom: 15px;}
+
+#osnovan {background-color: #ffffff;
+
+border: 1px solid #cccccc;
+
+padding: 8px;
+
+margin-bottom: 12px;}
+
+.važno   {color: green;
+
+font-weight: bold;
+}
+.lego-link  {display: inline-block;
+
+margin-top: 10px;
+
+margin-bottom: 10px;
+
+text-decoration: none;
+
+border: 1px solid blue;
+
+padding: 5px 10px;
+
+color: blue;
+
+background-color: #ffffff;}
+
+.lego-slika  {width: 300px;
+
+border: 1px solid #cccccc;
+
+margin-top: 10px;
+
+margin-bottom: 10px;
+}
+.lista-tema {margin-left: 20px;
+
+margin-bottom: 10px;
+
+list-style-type: square;}
+.napomena   {color: red;
+
+font-size: 14px;
+
+margin-top: 10px;}
+
+        /* OVDJE ĆETE DODATI SVOJ CSS KOD */
+        /* 1. Reset osnovnih margina i paddinga za sve elemente */
+* {
+    /* ovdje idu deklaracije za margin i padding */
+    margin: 0;
+padding: 0;
+}
+
+/* 2. Osnovni stil za cijelu stranicu */
+body {
+    /* ovdje idu deklaracije za font i pozadinsku boju stranice */
+    font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+
+}
+
+/* 3. Header dio stranice */
+header {
+    /* ovdje idu deklaracije za pozadinsku boju, border, margin i padding */
+    background-color: white;
+border: 1px solid #cccccc;
+margin: 20px;
+padding: 10px;
+}
+
+/* 4. Banner slika unutar headera */
+.banner img {
+    /* ovdje idu deklaracije za širinu slike i da nema razmaka ispod slike */
+    width: 100%;
+display: block;
+border-bottom: 3px solid #ffcc00;
+}
+
+/* 5. Navigacija ispod bannera */
+nav {
+    /* ovdje idu deklaracije za pozadinsku boju navigacije, padding i gornji margin */
+    background-color: #333333;
+padding: 8px;
+margin-top: 10px;
+
+}
+
+/* 6. Lista u navigaciji */
+ul {
+    /* ovdje idu deklaracije za list-style, margin i padding */
+    list-style-type: none;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+/* 7. Stavke liste u navigaciji */
+li {
+    /* ovdje idu deklaracije za prikaz u jednom redu i razmak desno */
+    display: inline-block;
+margin-right: 15px;
+
+}
+
+/* 8. Linkovi u navigaciji */
+a {
+    /* ovdje idu deklaracije za text-decoration, boju teksta, border, padding i veličinu fonta */
+    text-decoration: none;
+color: white;
+border: 1px solid white;
+padding: 5px 12px;
+font-size: 14px;
+}
+
+/* 9. Glavni sadržaj (main) */
+main {
+    /* ovdje idu deklaracije za pozadinsku boju, border, margin i padding */
+    background-color: white;
+border: 1px solid #cccccc;
+margin: 0 20px 20px 20px;
+padding: 10px;
+}
+
+/* 10. Tekst u glavnom sadržaju */
+main p {
+    /* ovdje ide deklaracija za razmak između redova (line-height) */
+    line-height: 1.5;
+}
+
+/* 11. Footer */
+footer {
+    /* ovdje idu deklaracije za poravnanje teksta, veličinu fonta, boju teksta i donji margin */
+text-align: center;
+font-size: 12px;
+color: #555555;
+margin-bottom: 10px;
+
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="banner">
+            <img src="lego_banner.jpg" alt="Lego">
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Početna</a></li>
+                <li><a href="#">O nama</a></li>
+                <li><a href="#">Usluge</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+         <h1>LEGO klub Zagreb</h1>
+
+    <h2>Dobrodošli u naš LEGO svijet</h2>
+
+    <p class="uvod">
+        LEGO klub Zagreb okuplja studente koji vole slagati modele, smišljati priče
+        i učiti kroz igru. Cilj kluba je razvijati maštu i logičko razmišljanje.
+    </p>
+
+    <p id="osnovan">
+        Klub je osnovan 2024. godine i od tada redovito organiziramo radionice,
+        natjecanja i izložbe LEGO modela.
+    </p>
+
+    <p>
+        Na radionicama radimo u malim timovima. Svaki tim dobiva zadatak, a
+        zatim zajedno planiraju, slažu modele i predstavljaju svoje rješenje.
+        Na taj način učimo suradnju i komunikaciju.
+    </p>
+
+    <p>
+        Posebno potičemo
+        <span class="vazno">kreativnost</span> i
+        <span class="vazno">rješavanje problema</span>
+        kroz zabavne LEGO izazove.
+    </p>
+
+    <a class="lego-link" href="https://www.lego.com" target="_blank">
+        Posjeti službenu LEGO stranicu
+    </a>
+
+    <img class="lego-slika" src="lego_set.jpg" alt="LEGO set">
+
+    <h2>Popularne LEGO teme u našem klubu</h2>
+
+    <ul class="lista-tema">
+        <li>LEGO City</li>
+        <li>LEGO Technic</li>
+        <li>LEGO Star Wars</li>
+        <li>LEGO Friends</li>
+    </ul>
+
+    <p class="napomena">
+        Napomena: informacije o rasporedu radionica i prijavi nalaze se na oglasnoj ploči škole.
+    </p>
+    <div class="section schedule-section">
+    <h2 class="section-title">Raspored radionica</h2>
+
+    <table class="raspored">
+        <caption>Raspored radionica – zimski semestar</caption>
+        <thead>
+            <tr>
+                <th>Dan</th>
+                <th>Vrijeme</th>
+                <th>Razina</th>
+                <th>Dobna skupina</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Utorak</td>
+                <td>18:00 – 20:00</td>
+                <td>Početna radionica</td>
+                <td>12 - 13 godina</td>
+            </tr>
+            <tr>
+                <td>Četvrtak</td>
+                <td>18:00 – 20:00</td>
+                <td>Napredna radionica</td>
+                <td>14 - 17 godina</td>
+            </tr>
+            <tr>
+                <td>Subota</td>
+                <td>10:00 – 12:00</td>
+                <td>Specijalna radionica</td>
+                <td>otvoreno za sve</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    </main>
+
+    <footer>
+        &copy; Ruža Mišević
+    </footer>
+</body>
+</html>
