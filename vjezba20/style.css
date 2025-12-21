@@ -1,0 +1,13 @@
+/* Font naslova */
+h1, h2, h3, h4, h5 {
+    font-family: "Superscripts-Oswald", "Oswald", "Roboto Condensed", "Roboto", "Noto Sans TC", "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", "Prompt", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    line-height: 1.25;
+}
+/* boja-dugme */
+.g__button--contained--candy-blue {
+    color: #000;                   /* boja teksta */
+    background: #6dcff6;           /* boja pozadine */
+    border-color: #6dcff6;         /* boja obruba */
+}
