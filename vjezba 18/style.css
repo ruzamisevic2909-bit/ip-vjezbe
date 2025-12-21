@@ -1,0 +1,175 @@
+/* RESET I OSNOVNI STILOVI */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #222;
+}
+
+/* NASLOVI */
+.section-header h1,
+.section-title,
+.lego-contact h2,
+.lego-gallery h2 {
+    font-family: "Lobster", "Georgia", serif;
+}
+
+/* HEADER I NAVIGACIJA */
+header {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 960px;
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+    border-bottom: 3px solid #ffcc00;
+}
+
+.main-nav {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav a {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #1f3f78;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.main-nav a:hover {
+    background-color: #3054a0;
+}
+
+.main-nav a[target="_blank"]::after {
+    content: " ↗";
+}
+
+/* GLAVNI SADRŽAJ */
+main {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    margin: 20px auto;
+    padding: 24px;
+    max-width: 960px;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #555555;
+    margin: 2rem auto;
+}
+
+/* ============================
+   GALERIJA SLIKA – VJEŽBA 18
+   ============================ */
+
+/* 1) Kontejner galerije */
+.lego-gallery {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lego-gallery h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.lego-gallery p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 2) GRID raspored */
+.lego-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* 3) Kartica */
+.gallery-item {
+    background-color: #ffffff;
+    border: 2px solid #cccccc;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+/* Slika */
+.gallery-item img {
+    width: 100%;
+    display: block;
+}
+
+/* Tekst ispod slike */
+.gallery-item figcaption {
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* 4) Boja okvira po tipu seta */
+.gallery-item[data-set="city"] {
+    border-color: #007bff;
+}
+
+.gallery-item[data-set="technic"] {
+    border-color: #ff8800;
+}
+
+.gallery-item[data-set="friends"] {
+    border-color: #ff69b4;
+}
+
+/* 5) Hover efekt */
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-color: #1f3f78;
+}
